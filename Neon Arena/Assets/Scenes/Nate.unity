@@ -255,8 +255,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab2bd783908b17a4a83ccb90b431357c, type: 3}
+--- !u!1 &447675025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6512478937862174111, guid: ab2bd783908b17a4a83ccb90b431357c,
+    type: 3}
+  m_PrefabInstance: {fileID: 359580649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &447675030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447675025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: fd7596f9b70c32f46852575055cdeb2e, type: 2}
 --- !u!1 &493541056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,10 +1715,11 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 4096
+  health: 50
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
+  walkPointRange: 1
   timeBetweenAttacks: 0.5
-  sightRange: 20
+  sightRange: 100
   attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0

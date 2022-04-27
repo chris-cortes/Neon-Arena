@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Followed tutorial at: https://www.youtube.com/watch?v=THnivyG0Mvo
+
 public class Gun : MonoBehaviour
 {
     public float damage = 10f;
@@ -8,7 +10,7 @@ public class Gun : MonoBehaviour
     public Camera fpsCam;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(Input.GetButtonDown("Fire"))
         {
@@ -16,12 +18,18 @@ public class Gun : MonoBehaviour
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
+
+            EnemyAI target = hit.transform.GetComponent<EnemyAI>();
+            if(target != null)
+            {
+                target.TakeDamage(damage);
+            }
         }
     }
 }
