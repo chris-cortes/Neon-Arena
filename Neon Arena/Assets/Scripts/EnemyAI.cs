@@ -115,7 +115,7 @@ public class EnemyAI : MonoBehaviour
         if (health <= 0f)
         {
             Die();
-            Respawn();
+            // Respawn();
         }
     }
 
