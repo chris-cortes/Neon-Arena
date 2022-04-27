@@ -337,6 +337,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493541056}
   m_CullTransparentMesh: 1
+--- !u!1 &509932492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6512478937862174111, guid: ab2bd783908b17a4a83ccb90b431357c,
+    type: 3}
+  m_PrefabInstance: {fileID: 359580649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509932497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509932492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: c879d530bb96e9342a35030e8189c0a7, type: 2}
 --- !u!20 &598833022 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1658729138968666671, guid: ab2bd783908b17a4a83ccb90b431357c,
@@ -1687,6 +1710,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 4096
+  health: 50
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 0.5
