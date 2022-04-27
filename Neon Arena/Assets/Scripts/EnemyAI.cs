@@ -13,6 +13,8 @@ public class EnemyAI : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+    public GameObject newEnemy;
+
     public float health = 100f;
 
     //Patroling
@@ -113,11 +115,17 @@ public class EnemyAI : MonoBehaviour
         if (health <= 0f)
         {
             Die();
+            Respawn();
         }
     }
 
     private void Die()
     {
         Destroy(gameObject);
+    }
+
+    private void Respawn()
+    {
+        Instantiate(newEnemy, new Vector3(1, 1, 1), Quaternion.identity);
     }
 }
