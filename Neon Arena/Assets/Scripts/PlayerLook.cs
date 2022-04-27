@@ -10,6 +10,12 @@ public class PlayerLook : MonoBehaviour
     public float xSens = 30f;
     public float ySens = 30f;
 
+    void Update()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     public void ProcessLook(Vector2 input)
     {
         float mouseX = input.x;
