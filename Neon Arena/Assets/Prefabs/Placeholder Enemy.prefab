@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7186981002515673417}
   - component: {fileID: 7186981002515673416}
   - component: {fileID: 7186981002515673431}
+  - component: {fileID: 9220986250538663049}
   m_Layer: 13
   m_Name: Placeholder Enemy
   m_TagString: Enemy
@@ -183,3 +184,19 @@ MonoBehaviour:
   attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!114 &9220986250538663049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186981002515673423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf6b8333355195429dd99b552edf935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1
+  player: {fileID: 190400026062272058, guid: ab2bd783908b17a4a83ccb90b431357c, type: 3}
+  exitBackgroundImageCanvasGroup: {fileID: 0}
+  crosshair: {fileID: 0}
