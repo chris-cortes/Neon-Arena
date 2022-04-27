@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 //Followed tutorial at: https://www.youtube.com/watch?v=UjkSFoLxesw
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
 
     //Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    bool alreadyAttacked = false;
 
     //States
     public float sightRange, attackRange;
@@ -79,6 +79,7 @@ public class EnemyMovement : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        //Debug.Log("Chasing The Player!");
     }
     private void AttackPlayer()
     {
@@ -86,10 +87,11 @@ public class EnemyMovement : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
+        //Debug.Log("Looking At The Player!");
 
         if (!alreadyAttacked)
         {
-            //Attack code here
+            //Attack code will go here
             Debug.Log("Attacking The Player!");
 
 
