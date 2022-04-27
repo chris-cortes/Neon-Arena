@@ -116,6 +116,8 @@ MonoBehaviour:
   damage: 10
   range: 100
   fpsCam: {fileID: 1658729138968666671}
+  impactEffect: {fileID: 8086538511454286304, guid: b18f527e7d4cc754f9ceeda40c6a5813,
+    type: 3}
 --- !u!1 &6512478937862174111
 GameObject:
   m_ObjectHideFlags: 0
