@@ -191,7 +191,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 239.2
+    width: 239
     height: 788
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 239.2
+    x: 239
     y: 0
     width: 1300
     height: 788
@@ -241,9 +241,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1539.2
+    x: 1539
     y: 0
-    width: 232.80005
+    width: 233
     height: 788
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -328,7 +328,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1539.2001
     y: 73.6
-    width: 230.80005
+    width: 231
     height: 767
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 230.80005, y: 746}
+  m_TargetSize: {x: 231, y: 746}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -352,8 +352,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -92.32002
-    m_HBaseRangeMax: 92.32002
+    m_HBaseRangeMin: -92.4
+    m_HBaseRangeMax: 92.4
     m_VBaseRangeMin: -298.4
     m_VBaseRangeMax: 298.4
     m_HAllowExceedBaseRangeMin: 1
@@ -373,23 +373,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 230.80005
+      width: 231
       height: 746
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 115.400024, y: 373}
+    m_Translation: {x: 115.5, y: 373}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -115.400024
+      x: -115.5
       y: -373
-      width: 230.80005
+      width: 231
       height: 746
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 288.50006, y: 958.75}
+  m_LastWindowPixelSize: {x: 288.75, y: 958.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -418,15 +418,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 238.2
+    width: 238
     height: 767
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 78610000
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cfbffff
+      m_ExpandedIDs: 04eeffffeef0ffffd8f3ffff4cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -538,11 +538,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.19036783, y: -0.3199028, z: 0.06579557, w: -0.92574424}
     speed: 2
-    m_Value: {x: -0.18898755, y: -0.32001567, z: 0.06531869, w: -0.9260708}
+    m_Value: {x: -0.19037648, y: -0.31991735, z: 0.06579856, w: -0.92578626}
   m_Size:
     m_Target: 567.79376
     speed: 2
-    m_Value: 543.3433
+    m_Value: 567.79376
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -606,21 +606,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\Projects\Neon-Arena\Neon Arena
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: ec560000
-    m_LastClickedID: 22252
+    m_SelectedIDs: ea560000
+    m_LastClickedID: 22250
     m_ExpandedIDs: 00000000b8560000ba56000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
