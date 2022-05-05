@@ -15,8 +15,16 @@ public class PlayerLook : MonoBehaviour
 
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if(PauseMenu.isPaused)
+        {
+          Cursor.lockState = CursorLockMode.None;
+          Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     public void ProcessLook(Vector2 input)
