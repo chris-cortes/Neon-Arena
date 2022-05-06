@@ -76,6 +76,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
@@ -131,7 +132,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1652}
     - Class: 114
+      Script: {instanceID: 2454}
+    - Class: 114
       Script: {instanceID: 2490}
+    - Class: 114
+      Script: {instanceID: 2814}
     - Class: 114
       Script: {instanceID: 3422}
     - Class: 114
@@ -145,8 +150,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5590}
-    - Class: 114
       Script: {instanceID: 5814}
     - Class: 114
       Script: {instanceID: 5826}
@@ -157,7 +160,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6282}
     - Class: 114
-      Script: {instanceID: 6438}
+      Script: {instanceID: 6818}
     - Class: 114
       Script: {instanceID: 6886}
     - Class: 114
@@ -171,8 +174,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8570}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -219,6 +220,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -241,6 +246,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1816}
     - Class: 114
       Script: {instanceID: 2290}
+    - Class: 114
+      Script: {instanceID: 2454}
     - Class: 114
       Script: {instanceID: 2466}
     - Class: 114
@@ -1728,7 +1735,7 @@ ScriptsOnlyBuild:
     className: DetectionModule
   - hash:
       serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
+      Hash: 9a62ee8f45a66f7de7da8fa42f60d9d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu

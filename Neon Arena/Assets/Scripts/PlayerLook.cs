@@ -4,6 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLook : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlayerLook : MonoBehaviour
 
     public float xSens = 30f;
     public float ySens = 30f;
+    public float sens = 30f;
 
     void Update()
     {
@@ -32,11 +34,16 @@ public class PlayerLook : MonoBehaviour
         float mouseX = input.x;
         float mouseY = input.y;
 
-        xRotation -= (mouseY * Time.deltaTime) * ySens;
+        xRotation -= (mouseY * Time.deltaTime) * sens;
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
-        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSens);
+        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * sens);
+    }
+
+    public void ChangeSensitivity(Slider slider)
+    {
+        sens = slider.value;
     }
 }
