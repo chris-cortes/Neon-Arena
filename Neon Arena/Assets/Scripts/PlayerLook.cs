@@ -13,7 +13,7 @@ public class PlayerLook : MonoBehaviour
 
     public float xSens = 30f;
     public float ySens = 30f;
-    public float sens = 30f;
+    public float sens = 15f;
 
     void Update()
     {

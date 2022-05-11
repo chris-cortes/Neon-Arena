@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject crosshair;
+
+    int level = 1;
 
     // Update is called once per frame
     void Update()
@@ -35,5 +38,10 @@ public class PauseMenu : MonoBehaviour
         crosshair.SetActive(true);
         Time.timeScale = 1;
         isPaused = false;
+    }
+
+    public void RestartButton()
+    {
+        SceneManager.LoadScene(level);
     }
 }
