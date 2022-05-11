@@ -1,5 +1,3 @@
-// https://www.youtube.com/watch?v=THnivyG0Mvo
-
 using UnityEngine;
 
 //Followed tutorial at: https://www.youtube.com/watch?v=THnivyG0Mvo
@@ -12,12 +10,15 @@ public class Gun : MonoBehaviour
     public Camera fpsCam;
     public GameObject impactEffect;
 
+    public AudioSource shootingSound;
+
     // Update is called once per frame
     private void Update()
     {
         if(Input.GetButtonDown("Fire"))
         {
             Shoot();
+            shootingSound.Play();
         }
     }
 

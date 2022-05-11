@@ -13,7 +13,9 @@ public class EnemyAI : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public GameObject newEnemy;
+    //public GameObject newEnemy;
+
+    public ParticleSystem deathEffect;
 
     public float health = 100f;
     public float enemydamagetoplayer = 40f;
@@ -26,7 +28,7 @@ public class EnemyAI : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked = false;
-    public GameObject projectile;
+    //public GameObject projectile;
 
     //States
     public float sightRange, attackRange;
@@ -129,11 +131,15 @@ public class EnemyAI : MonoBehaviour
 
     private void Die()
     {
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+
         Destroy(gameObject);
     }
 
+    /*
     private void Respawn()
     {
         Instantiate(newEnemy, new Vector3(1, 1, 1), Quaternion.identity);
     }
+    */
 }
