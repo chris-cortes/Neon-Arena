@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public static bool isPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject shopMenuUI;
     public GameObject crosshair;
 
     int level = 1;
@@ -35,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        shopMenuUI.SetActive(false);
         crosshair.SetActive(true);
         Time.timeScale = 1;
         isPaused = false;

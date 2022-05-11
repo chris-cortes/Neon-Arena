@@ -23,6 +23,8 @@ public class EnemyAI : MonoBehaviour
     public float health = 100f;
     public float enemydamagetoplayer = 40f;
 
+    public static bool OneShotBaught = false;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -40,7 +42,7 @@ public class EnemyAI : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
-        
+
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -137,6 +139,13 @@ public class EnemyAI : MonoBehaviour
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         dollarText.text = "" + (dollars + 50.00f);
         Destroy(gameObject);
+    }
+
+    public void OneShotKill()
+    {
+            dollars = dollars - 5f;
+            dollarText.text = "" + (dollars - 5f);
+            enemydamagetoplayer = 1000f;
     }
 
     /*
