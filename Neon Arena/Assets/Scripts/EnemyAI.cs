@@ -16,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject newEnemy;
 
     public float health = 100f;
+    public float enemydamagetoplayer = 40f;
 
     //Patroling
     public Vector3 walkPoint;
@@ -25,6 +26,7 @@ public class EnemyAI : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked = false;
+    public GameObject projectile;
 
     //States
     public float sightRange, attackRange;
@@ -33,6 +35,7 @@ public class EnemyAI : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
+        
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -97,7 +100,12 @@ public class EnemyAI : MonoBehaviour
         {
             //Attack code will go here
             Debug.Log("Attacking The Player!");
+            GameObject playerObject = GameObject.FindWithTag("Player");
+            playerObject.GetComponent<GameOver>().PlayerTakeDamage(enemydamagetoplayer);
 
+            //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

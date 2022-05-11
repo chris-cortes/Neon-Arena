@@ -7,24 +7,24 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public float fadeDuration = 1f;
-    public GameObject player;
+    public GameObject enemy;
+    public float PlayerHealth = 100f;
+    
     public CanvasGroup exitBackgroundImageCanvasGroup;
     public Image crosshair;
 
     bool m_IsPlayerDead;
     float m_Timer;
 
-    void OnTriggerEnter(Collider other)
+    public void PlayerTakeDamage(float damage)
     {
-        if (other.gameObject == player)
-        {
-            m_IsPlayerDead = true;
-        }
+        PlayerHealth -= damage;
+        Debug.Log("Player Health is now: " + PlayerHealth);
     }
 
     void Update()
     {
-        if (m_IsPlayerDead)
+        if (PlayerHealth <= 0f)
         {
             EndLevel();
             crosshair.enabled = false;
