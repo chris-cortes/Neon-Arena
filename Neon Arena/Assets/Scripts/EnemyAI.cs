@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 //Followed tutorial at: https://www.youtube.com/watch?v=UjkSFoLxesw
 
@@ -16,6 +17,8 @@ public class EnemyAI : MonoBehaviour
     //public GameObject newEnemy;
 
     public ParticleSystem deathEffect;
+    public Text dollarText;
+    private float dollars = 0.00f;
 
     public float health = 100f;
     public float enemydamagetoplayer = 40f;
@@ -132,7 +135,7 @@ public class EnemyAI : MonoBehaviour
     private void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
-
+        dollarText.text = "" + (dollars + 50.00f);
         Destroy(gameObject);
     }
 
