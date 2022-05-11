@@ -9,17 +9,29 @@ public class GameOver : MonoBehaviour
     public float fadeDuration = 1f;
     public GameObject enemy;
     public float PlayerHealth = 100f;
-    
+
     public CanvasGroup exitBackgroundImageCanvasGroup;
     public Image crosshair;
 
+    public Slider healthBar;
+
     bool m_IsPlayerDead;
     float m_Timer;
+
+    void Start()
+    {
+        //set max health
+        healthBar.maxValue = PlayerHealth;
+        healthBar.value = PlayerHealth;
+    }
 
     public void PlayerTakeDamage(float damage)
     {
         PlayerHealth -= damage;
         Debug.Log("Player Health is now: " + PlayerHealth);
+        // set health
+        healthBar.value = PlayerHealth;
+
     }
 
     void Update()
