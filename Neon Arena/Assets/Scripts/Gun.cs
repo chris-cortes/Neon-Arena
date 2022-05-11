@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 //Followed tutorial at: https://www.youtube.com/watch?v=THnivyG0Mvo
 
@@ -11,6 +12,9 @@ public class Gun : MonoBehaviour
     public GameObject impactEffect;
 
     public AudioSource shootingSound;
+
+    public Text dollarText;
+    private float dollars = 0.00f;
 
     // Update is called once per frame
     private void Update()
@@ -31,11 +35,35 @@ public class Gun : MonoBehaviour
             EnemyAI target = hit.transform.GetComponent<EnemyAI>();
             if (target != null)
             {
-                target.TakeDamage(damage);
+                int enemydead = 0;
+                enemydead = target.TakeDamage(damage);
+
+                if (enemydead == 1)
+                {
+                    dollars += 50.00f;
+                    dollarText.text = "" + (dollars);
+                }
             }
 
             GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGo, 1f);
         }
+    }
+
+    private bool alreadybought = false;
+
+    public void OneShotKill()
+    {
+        if(dollars >= 100f)
+        {
+            if (!alreadybought)
+            {
+                alreadybought = true;
+                dollars = dollars - 100f;
+                dollarText.text = "" + (dollars);
+                damage = 1000f;
+            }
+        }
+        
     }
 }

@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject shopMenuUI;
+    public GameObject UICanvas;
     public GameObject crosshair;
 
     int level = 1;
@@ -26,6 +27,7 @@ public class PauseMenu : MonoBehaviour
             {
                 pauseMenuUI.SetActive(true);
                 crosshair.SetActive(false);
+                //UICanvas.SetActive(false);
                 Time.timeScale = 0;
                 isPaused = true;
             }
@@ -38,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         shopMenuUI.SetActive(false);
         crosshair.SetActive(true);
+        //UICanvas.SetActive(true);
         Time.timeScale = 1;
         isPaused = false;
     }

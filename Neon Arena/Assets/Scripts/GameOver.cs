@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
     public float PlayerHealth = 100f;
 
     public CanvasGroup exitBackgroundImageCanvasGroup;
-    public Image crosshair;
+    public Canvas DisableThisUI;
 
     public Slider healthBar;
 
@@ -39,7 +39,7 @@ public class GameOver : MonoBehaviour
         if (PlayerHealth <= 0f)
         {
             EndLevel();
-            crosshair.enabled = false;
+            DisableThisUI.enabled = false;
             if (Input.GetKeyDown(KeyCode.R))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
