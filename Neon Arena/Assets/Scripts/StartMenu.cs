@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
-    int level = 1;
-
-    public void StartButton()
+    public void MapStart1()
     {
-        SceneManager.LoadScene(level);
+        SceneManager.LoadScene(1);
+    }
+
+    public void MapStart2()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void MapStart3()
+    {
+        SceneManager.LoadScene(3);
     }
 }
