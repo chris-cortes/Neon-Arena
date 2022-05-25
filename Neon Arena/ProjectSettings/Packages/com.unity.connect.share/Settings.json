@@ -6,7 +6,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Unity/Projects/Neon-Arena/Neon Arena/Build;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"D:/CIS 410 Game Builds/Beta_Build;C:/Unity/Projects/Neon-Arena/Neon Arena/Build;;;;;;;;\"}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

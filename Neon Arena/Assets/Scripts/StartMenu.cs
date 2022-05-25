@@ -34,10 +34,12 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    /*
     public void RangeStart()
     {
         SceneManager.LoadScene(4);
     }
+    */
 
     public void MusicVolume(Slider slider)
     {
