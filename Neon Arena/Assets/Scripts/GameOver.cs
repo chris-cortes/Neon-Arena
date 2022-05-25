@@ -16,7 +16,9 @@ public class GameOver : MonoBehaviour
     public CanvasGroup exitBackgroundImageCanvasGroup;
     public Canvas DisableThisUI;
 
-    public Slider healthBar;
+    // public Slider healthBar;
+
+    public Image healthBar;
 
     bool m_IsPlayerDead;
     float m_Timer;
@@ -24,8 +26,10 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         //set max health
-        healthBar.maxValue = PlayerHealth;
-        healthBar.value = PlayerHealth;
+        // healthBar.maxValue = PlayerHealth;
+        // healthBar.value = PlayerHealth;
+
+        healthBar.fillAmount = PlayerHealth/100f;
     }
 
     public void PlayerTakeDamage(float damage)
@@ -40,8 +44,10 @@ public class GameOver : MonoBehaviour
 
             PlayerHealth -= damage;
             Debug.Log("Player Health is now: " + PlayerHealth);
+
             // set health
-            healthBar.value = PlayerHealth;
+            // healthBar.value = PlayerHealth;
+            healthBar.fillAmount = PlayerHealth/100f;
         }
     }
 
