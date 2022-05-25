@@ -265,6 +265,8 @@ MonoBehaviour:
   shopMenuUI: {fileID: 5051921448160534294}
   UICanvas: {fileID: 0}
   crosshair: {fileID: 0}
+  sensSlider: {fileID: 0}
+  musicVolumeSlider: {fileID: 0}
 --- !u!1 &5051921446289407447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,13 +2282,13 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
-        m_Mode: 0
+      - m_Target: {fileID: 5051921446214721485}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: MusicVolume
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5051921447527949012}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -11,10 +11,6 @@ public class PlayerLook : MonoBehaviour
     public Camera cam;
     private float xRotation = 0f;
 
-    public float xSens = 30f;
-    public float ySens = 30f;
-    public float sens = 15f;
-
     void Update()
     {
         if(PauseMenu.isPaused)
@@ -34,16 +30,16 @@ public class PlayerLook : MonoBehaviour
         float mouseX = input.x;
         float mouseY = input.y;
 
-        xRotation -= (mouseY * Time.deltaTime) * sens;
+        xRotation -= (mouseY * Time.deltaTime) * StartMenu.sens;
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
-        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * sens);
+        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * StartMenu.sens);
     }
 
     public void ChangeSensitivity(Slider slider)
     {
-        sens = slider.value;
+        StartMenu.sens = slider.value;
     }
 }

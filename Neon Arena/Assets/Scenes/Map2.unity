@@ -652,6 +652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5051921446214721485, guid: 9270c72d554fb8d4996a0c7415f26801,
         type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1289955123}
+    - target: {fileID: 5051921446214721485, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
       propertyPath: UICanvas
       value: 
       objectReference: {fileID: 1458214755}
@@ -660,8 +665,95 @@ PrefabInstance:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 493541056}
+    - target: {fileID: 5051921446214721485, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: sensSlider
+      value: 
+      objectReference: {fileID: 876507007}
+    - target: {fileID: 5051921446214721485, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: musicVolumeSlider
+      value: 
+      objectReference: {fileID: 1102791012}
+    - target: {fileID: 5051921447299415275, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1465151785}
+    - target: {fileID: 5051921447299415275, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSensitivity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 475022724}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1289955123}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9270c72d554fb8d4996a0c7415f26801, type: 3}
+--- !u!114 &475022724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051921446214721485, guid: 9270c72d554fb8d4996a0c7415f26801,
+    type: 3}
+  m_PrefabInstance: {fileID: 475022723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8527348be56384380771236fa19cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &493541056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1564,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836651642}
   m_CullTransparentMesh: 1
+--- !u!114 &876507007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051921447299415275, guid: 9270c72d554fb8d4996a0c7415f26801,
+    type: 3}
+  m_PrefabInstance: {fileID: 475022723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &898799110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1746,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 20}
+--- !u!114 &1102791012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051921447527949012, guid: 9270c72d554fb8d4996a0c7415f26801,
+    type: 3}
+  m_PrefabInstance: {fileID: 475022723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1108318430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,9 +2364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 598833022}
-  xSens: 30
-  ySens: 30
-  sens: 30
 --- !u!114 &1465151786
 MonoBehaviour:
   m_ObjectHideFlags: 0
