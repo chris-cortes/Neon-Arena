@@ -915,7 +915,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 29f7bb0a7bdd043408ad1963a24b7997, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: fda7bdf9475e68840b4ce2e44388170d, type: 2}
 --- !u!4 &254419982
 Transform:
   m_ObjectHideFlags: 0
@@ -1873,7 +1873,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a4176fff118617b4b8e631a1fce82097, type: 2}
+  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1911,7 +1911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701744998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.6, y: 8.9, z: -20.5}
+  m_LocalPosition: {x: -9.6, y: 8.9, z: -19.74}
   m_LocalScale: {x: 5, y: 18.06725, z: 21.87258}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2172,7 +2172,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca52e2470dad20748ba33387f03f0686, type: 2}
+  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2210,8 +2210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784746917}
   m_LocalRotation: {x: 0, y: 0, z: 0.17364816, w: 0.9848078}
-  m_LocalPosition: {x: -23.7, y: 1.3, z: 40}
-  m_LocalScale: {x: 48.09323, y: 3.0045872, z: 21.45908}
+  m_LocalPosition: {x: -15.59, y: 4.25, z: 33.99}
+  m_LocalScale: {x: 31.205297, y: 3.0045872, z: 11.781679}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -2559,7 +2559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca52e2470dad20748ba33387f03f0686, type: 2}
+  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2597,8 +2597,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929097095}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 40.1, y: 9.5, z: 6.7}
-  m_LocalScale: {x: 99.49806, y: 3.0045872, z: 21.45908}
+  m_LocalPosition: {x: 34.77, y: 9.5, z: -6.54}
+  m_LocalScale: {x: 48.072926, y: 3.0045872, z: 11.421595}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3806,7 +3806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca52e2470dad20748ba33387f03f0686, type: 2}
+  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3844,8 +3844,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383765064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.1, y: 9.5, z: 40}
-  m_LocalScale: {x: 99.49806, y: 3.0045872, z: 21.45908}
+  m_LocalPosition: {x: 19.17, y: 9.37, z: 34.03}
+  m_LocalScale: {x: 41.88987, y: 3.0045872, z: 11.782364}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -4284,6 +4284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 1
   enemy: {fileID: 1260598329778352}
+  GotHitScreen: {fileID: 0}
   PlayerHealth: 100
   exitBackgroundImageCanvasGroup: {fileID: 623305929}
   DisableThisUI: {fileID: 1458214758}
@@ -4692,6 +4693,7 @@ MonoBehaviour:
   spawners: []
   enemy: {fileID: 6115702486635082706, guid: 254375c020d9e7940899c93c146567c1, type: 3}
   spawnCooldown: 3
+  num_spawners: 1
 --- !u!1 &1769198899
 GameObject:
   m_ObjectHideFlags: 0

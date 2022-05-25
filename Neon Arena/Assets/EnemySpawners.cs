@@ -9,12 +9,13 @@ public class EnemySpawners : MonoBehaviour
     public GameObject[] spawners;
     public GameObject enemy;
     public float spawnCooldown = 3.0f;
+    public int num_spawners = 1;
     private float numSeconds = 0.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawners = new GameObject[4];
+        spawners = new GameObject[num_spawners];
 
         for(int i = 0; i < spawners.Length; i++)
         {
