@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
+    public static float PlayerShield = 0f;
 
     public Camera fpsCam;
     public GameObject impactEffect;
@@ -15,6 +16,8 @@ public class Gun : MonoBehaviour
 
     public Text dollarText;
     private float dollars = 0.00f;
+
+    public Image shieldBar;
 
     // Update is called once per frame
     private void Update()
@@ -54,16 +57,29 @@ public class Gun : MonoBehaviour
 
     public void OneShotKill()
     {
-        if(dollars >= 100f)
+        if(dollars >= 200f)
         {
             if (!alreadybought)
             {
                 alreadybought = true;
-                dollars = dollars - 100f;
+                dollars = dollars - 200f;
                 dollarText.text = "" + (dollars);
                 damage = 1000f;
             }
         }
-        
+    }
+
+    public void Shields()
+    {
+        if(dollars >= 100f)
+        {
+            if (PlayerShield != 100f)
+            {
+                dollars = dollars - 100f;
+                dollarText.text = "" + (dollars);
+                PlayerShield = 100f;
+                shieldBar.fillAmount = PlayerShield/100f;
+            }
+        }
     }
 }

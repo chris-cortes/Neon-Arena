@@ -13,12 +13,12 @@ public class GameOver : MonoBehaviour
     public GameObject GotHitScreen;
     public float PlayerHealth = 100f;
 
+
     public CanvasGroup exitBackgroundImageCanvasGroup;
     public Canvas DisableThisUI;
 
-    // public Slider healthBar;
-
     public Image healthBar;
+    public Image shieldBar;
 
     bool m_IsPlayerDead;
     float m_Timer;
@@ -26,27 +26,39 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         //set max health
-        // healthBar.maxValue = PlayerHealth;
-        // healthBar.value = PlayerHealth;
-
+        PlayerHealth = 100f;
+        Gun.PlayerShield = 0f;
         healthBar.fillAmount = PlayerHealth/100f;
+        shieldBar.fillAmount = 0f;
     }
 
     public void PlayerTakeDamage(float damage)
     {
-        if (PlayerHealth > 0f)
+        if (Gun.PlayerShield > 0f)
         {
             var color = GotHitScreen.GetComponent<Image>().color;
             color.a = 0.8f;
 
             GotHitScreen.GetComponent<Image>().color = color;
 
+            Gun.PlayerShield -= damage;
+            Debug.Log("Player Shield is now: " + Gun.PlayerShield);
+
+            // set health
+            shieldBar.fillAmount = Gun.PlayerShield/100f;
+        }
+
+        else
+        {
+            var color = GotHitScreen.GetComponent<Image>().color;
+            color.a = 0.8f;
+
+            GotHitScreen.GetComponent<Image>().color = color;
 
             PlayerHealth -= damage;
             Debug.Log("Player Health is now: " + PlayerHealth);
 
             // set health
-            // healthBar.value = PlayerHealth;
             healthBar.fillAmount = PlayerHealth/100f;
         }
     }
