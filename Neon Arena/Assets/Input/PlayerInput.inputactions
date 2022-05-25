@@ -28,6 +28,22 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SprintStart",
+                    "type": "Button",
+                    "id": "66ee42b1-7b17-46ac-8583-e9b61a6e0d09",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SprintFinish",
+                    "type": "Button",
+                    "id": "7e11c049-8788-4858-b64c-7ba1617a96f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -105,6 +121,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51878d3f-b328-43f7-9cc6-3a56f57bbade",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SprintStart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e643717a-1a12-4e7f-a011-e17901349c93",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SprintFinish",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

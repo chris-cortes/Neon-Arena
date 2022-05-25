@@ -41,6 +41,22 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""SprintStart"",
+                    ""type"": ""Button"",
+                    ""id"": ""66ee42b1-7b17-46ac-8583-e9b61a6e0d09"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SprintFinish"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e11c049-8788-4858-b64c-7ba1617a96f0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +136,28 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""51878d3f-b328-43f7-9cc6-3a56f57bbade"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SprintStart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e643717a-1a12-4e7f-a011-e17901349c93"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SprintFinish"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -131,6 +169,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_OnFoot_Movement = m_OnFoot.FindAction("Movement", throwIfNotFound: true);
         m_OnFoot_Jump = m_OnFoot.FindAction("Jump", throwIfNotFound: true);
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
+        m_OnFoot_SprintStart = m_OnFoot.FindAction("SprintStart", throwIfNotFound: true);
+        m_OnFoot_SprintFinish = m_OnFoot.FindAction("SprintFinish", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -183,6 +223,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_OnFoot_Movement;
     private readonly InputAction m_OnFoot_Jump;
     private readonly InputAction m_OnFoot_Look;
+    private readonly InputAction m_OnFoot_SprintStart;
+    private readonly InputAction m_OnFoot_SprintFinish;
     public struct OnFootActions
     {
         private @PlayerInput m_Wrapper;
@@ -190,6 +232,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_OnFoot_Movement;
         public InputAction @Jump => m_Wrapper.m_OnFoot_Jump;
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
+        public InputAction @SprintStart => m_Wrapper.m_OnFoot_SprintStart;
+        public InputAction @SprintFinish => m_Wrapper.m_OnFoot_SprintFinish;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -208,6 +252,12 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Look.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnLook;
                 @Look.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnLook;
                 @Look.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnLook;
+                @SprintStart.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintStart;
+                @SprintStart.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintStart;
+                @SprintStart.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintStart;
+                @SprintFinish.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintFinish;
+                @SprintFinish.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintFinish;
+                @SprintFinish.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprintFinish;
             }
             m_Wrapper.m_OnFootActionsCallbackInterface = instance;
             if (instance != null)
@@ -221,6 +271,12 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
+                @SprintStart.started += instance.OnSprintStart;
+                @SprintStart.performed += instance.OnSprintStart;
+                @SprintStart.canceled += instance.OnSprintStart;
+                @SprintFinish.started += instance.OnSprintFinish;
+                @SprintFinish.performed += instance.OnSprintFinish;
+                @SprintFinish.canceled += instance.OnSprintFinish;
             }
         }
     }
@@ -230,5 +286,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnSprintStart(InputAction.CallbackContext context);
+        void OnSprintFinish(InputAction.CallbackContext context);
     }
 }
