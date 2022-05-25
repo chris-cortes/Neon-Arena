@@ -14,6 +14,11 @@ public class PauseMenu : MonoBehaviour
 
     int level = 1;
 
+    void Start()
+    {
+        Resume();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -50,4 +55,11 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Resume();
     }
+
+    public void QuitButton()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
+
 }
