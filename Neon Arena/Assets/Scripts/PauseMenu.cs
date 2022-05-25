@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         music.volume = StartMenu.musicVolume;
 
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             if(isPaused)
             {
