@@ -13,6 +13,36 @@ public class StartMenu : MonoBehaviour
     public static bool isMap2Locked = true;
     public static bool isMap3Locked = true;
 
+    public static bool isMapColorBlack = false;
+    public static bool isMapColorBlue = false;
+    public static bool isMapColorCyan = false;
+    public static bool isMapColorGreen = false;
+    public static bool isMapColorGrey = false;
+    public static bool isMapColorMagenta = false;
+    public static bool isMapColorRed = false;
+    public static bool isMapColorWhite = false;
+    public static bool isMapColorYellow = false;
+
+    public static bool isGunGlowColorBlack = false;
+    public static bool isGunGlowColorBlue = false;
+    public static bool isGunGlowColorCyan = false;
+    public static bool isGunGlowColorGreen = false;
+    public static bool isGunGlowColorGrey = false;
+    public static bool isGunGlowColorMagenta = false;
+    public static bool isGunGlowColorRed = false;
+    public static bool isGunGlowColorWhite = false;
+    public static bool isGunGlowColorYellow = false;
+
+    public static bool isGunColorBlack = false;
+    public static bool isGunColorBlue = false;
+    public static bool isGunColorCyan = false;
+    public static bool isGunColorGreen = false;
+    public static bool isGunColorGrey = false;
+    public static bool isGunColorMagenta = false;
+    public static bool isGunColorRed = false;
+    public static bool isGunColorWhite = false;
+    public static bool isGunColorYellow = false;
+
     public Text totalDollarsText;
 
     public RawImage lock2;
@@ -68,6 +98,7 @@ public class StartMenu : MonoBehaviour
             {
                 isMap2Locked = false;
                 totalDollars = totalDollars - 500;
+                totalDollarsText.text = "" + (totalDollars);
             }
 
         }
@@ -80,6 +111,7 @@ public class StartMenu : MonoBehaviour
             {
                 isMap3Locked = false;
                 totalDollars = totalDollars - 500;
+                totalDollarsText.text = "" + (totalDollars);
             }
         }
 
@@ -88,124 +120,434 @@ public class StartMenu : MonoBehaviour
     // Map Color Customization
     public void BlackMapColor()
     {
-        map.color = Color.black;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorBlack == false)
+            {
+                FalseMapColors();
+                isMapColorBlack = true;
+                map.color = Color.black;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void BlueMapColor()
     {
-        map.color = Color.blue;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorBlue == false)
+            {
+                FalseMapColors();
+                isMapColorBlue = true;
+                map.color = Color.blue;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void CyanMapColor()
     {
-        map.color = Color.cyan;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorCyan == false)
+            {
+                FalseMapColors();
+                isMapColorCyan = true;
+                map.color = Color.cyan;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreenMapColor()
     {
-        map.color = Color.green;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorGreen == false)
+            {
+                FalseMapColors();
+                isMapColorGreen = true;
+                map.color = Color.green;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreyMapColor()
     {
-        map.color = Color.grey;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorGrey == false)
+            {
+                FalseMapColors();
+                isMapColorGrey = true;
+                map.color = Color.grey;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void MagentaMapColor()
     {
-        map.color = Color.magenta;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorMagenta == false)
+            {
+                FalseMapColors();
+                isMapColorMagenta = true;
+                map.color = Color.magenta;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void RedMapColor()
     {
-        map.color = Color.red;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorRed == false)
+            {
+                FalseMapColors();
+                isMapColorRed = true;
+                map.color = Color.red;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void WhiteMapColor()
     {
-        map.color = Color.white;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorWhite == false)
+            {
+                FalseMapColors();
+                isMapColorWhite = true;
+                map.color = Color.white;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void YellowMapColor()
     {
-        map.color = Color.yellow;
+        if(totalDollars >= 100)
+        {
+            if(isMapColorYellow == false)
+            {
+                FalseMapColors();
+                isMapColorYellow = true;
+                map.color = Color.yellow;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
 
     // Gun Glow Color Customization
     public void BlackGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.black);
-        particles.SetColor("_EmissionColor", Color.black);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorBlack == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorBlack = true;
+                gun.SetColor("_EmissionColor", Color.black);
+                particles.SetColor("_EmissionColor", Color.black);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
+
     }
     public void BlueGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.blue);
-        particles.SetColor("_EmissionColor", Color.blue);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorBlue == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorBlue = true;
+                gun.SetColor("_EmissionColor", Color.blue);
+                particles.SetColor("_EmissionColor", Color.blue);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void CyanGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.cyan);
-        particles.SetColor("_EmissionColor", Color.cyan);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorCyan == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorCyan = true;
+                gun.SetColor("_EmissionColor", Color.cyan);
+                particles.SetColor("_EmissionColor", Color.cyan);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreenGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.green);
-        particles.SetColor("_EmissionColor", Color.green);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorGreen == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorGreen = true;
+                gun.SetColor("_EmissionColor", Color.green);
+                particles.SetColor("_EmissionColor", Color.green);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreyGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.grey);
-        particles.SetColor("_EmissionColor", Color.grey);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorGrey == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorGrey = true;
+                gun.SetColor("_EmissionColor", Color.grey);
+                particles.SetColor("_EmissionColor", Color.grey);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void MagentaGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.magenta);
-        particles.SetColor("_EmissionColor", Color.magenta);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorMagenta == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorMagenta = true;
+                gun.SetColor("_EmissionColor", Color.magenta);
+                particles.SetColor("_EmissionColor", Color.magenta);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void RedGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.red);
-        particles.SetColor("_EmissionColor", Color.red);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorRed == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorRed = true;
+                gun.SetColor("_EmissionColor", Color.red);
+                particles.SetColor("_EmissionColor", Color.red);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void WhiteGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.white);
-        particles.SetColor("_EmissionColor", Color.white);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorWhite == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorWhite = true;
+                gun.SetColor("_EmissionColor", Color.white);
+                particles.SetColor("_EmissionColor", Color.white);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void YellowGunGlowColor()
     {
-        gun.SetColor("_EmissionColor", Color.yellow);
-        particles.SetColor("_EmissionColor", Color.yellow);
+        if(totalDollars >= 100)
+        {
+            if(isGunGlowColorYellow == false)
+            {
+                FalseGunGlowColors();
+                isGunGlowColorYellow = true;
+                gun.SetColor("_EmissionColor", Color.yellow);
+                particles.SetColor("_EmissionColor", Color.yellow);
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
 
     // Gun Color
     public void BlackGunColor()
     {
-        gun.color = Color.black;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorBlack == false)
+            {
+                FalseGunColors();
+                isGunColorBlack = true;
+                gun.color = Color.black;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
+
     }
     public void BlueGunColor()
     {
-        gun.color = Color.blue;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorBlue == false)
+            {
+                FalseGunColors();
+                isGunColorBlue = true;
+                gun.color = Color.blue;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void CyanGunColor()
     {
-        gun.color = Color.cyan;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorCyan == false)
+            {
+                FalseGunColors();
+                isGunColorCyan = true;
+                gun.color = Color.cyan;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreenGunColor()
     {
-        gun.color = Color.green;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorGreen == false)
+            {
+                FalseGunColors();
+                isGunColorGreen = true;
+                gun.color = Color.green;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void GreyGunColor()
     {
-        gun.color = Color.grey;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorGrey == false)
+            {
+                FalseGunColors();
+                isGunColorGrey = true;
+                gun.color = Color.grey;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void MagentaGunColor()
     {
-        gun.color = Color.magenta;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorMagenta == false)
+            {
+                FalseGunColors();
+                isGunColorMagenta = true;
+                gun.color = Color.magenta;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void RedGunColor()
     {
-        gun.color = Color.red;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorRed == false)
+            {
+                FalseGunColors();
+                isGunColorRed = true;
+                gun.color = Color.red;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void WhiteGunColor()
     {
-        gun.color = Color.white;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorWhite == false)
+            {
+                FalseGunColors();
+                isGunColorWhite = true;
+                gun.color = Color.white;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
     }
     public void YellowGunColor()
     {
-        gun.color = Color.yellow;
+        if(totalDollars >= 100)
+        {
+            if(isGunColorYellow == false)
+            {
+                FalseGunColors();
+                isGunColorYellow = true;
+                gun.color = Color.yellow;
+                totalDollars = totalDollars - 100;
+                totalDollarsText.text = "" + (totalDollars);
+            }
+        }
+    }
+
+    // set the bools to false
+    public void FalseMapColors()
+    {
+        isMapColorBlack = false;
+        isMapColorBlue = false;
+        isMapColorCyan = false;
+        isMapColorGreen = false;
+        isMapColorGrey = false;
+        isMapColorMagenta = false;
+        isMapColorRed = false;
+        isMapColorWhite = false;
+        isMapColorYellow = false;
+    }
+    public void FalseGunGlowColors()
+    {
+        isGunGlowColorBlack = false;
+        isGunGlowColorBlue = false;
+        isGunGlowColorCyan = false;
+        isGunGlowColorGreen = false;
+        isGunGlowColorGrey = false;
+        isGunGlowColorMagenta = false;
+        isGunGlowColorRed = false;
+        isGunGlowColorWhite = false;
+        isGunGlowColorYellow = false;
+    }
+    public void FalseGunColors()
+    {
+        isGunColorBlack = false;
+        isGunColorBlue = false;
+        isGunColorCyan = false;
+        isGunColorGreen = false;
+        isGunColorGrey = false;
+        isGunColorMagenta = false;
+        isGunColorRed = false;
+        isGunColorWhite = false;
+        isGunColorYellow = false;
     }
 
     // Settings Sliders
