@@ -19,5 +19,5 @@ EditorBuildSettings:
     guid: e9567df11bca34249956fc4fcd4654c3
   - enabled: 1
     path: Assets/Scenes/ShootingRange.unity
-    guid: 9fef3d6ad4821eb4a98e0b5f4a6612eb
+    guid: 3e3e12bce438b91478ca45703667d284
   m_configObjects: {}

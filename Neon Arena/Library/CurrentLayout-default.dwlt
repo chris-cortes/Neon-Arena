@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 88
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 83
+  controlID: 19
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fe0d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28f0ffff9ef5ffff34faffff2e52000002630000
+      m_ExpandedIDs: 2c10ffffbc40ffffc046ffff204bffff2e72ffff66eeffff34faffff186b0000c06c00006a8d0000b6aa00007aab0000faab0000aec70000bcc80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 630.4702, y: 208.7944, z: -127.6863}
+    m_Target: {x: 566.2947, y: 336.38373, z: -32.064884}
     speed: 2
-    m_Value: {x: 630.4702, y: 208.7944, z: -127.6863}
+    m_Value: {x: 566.2947, y: 336.38373, z: -32.064884}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -489,11 +489,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
-    m_Target: 678.3062
+    m_Target: 454.8955
     speed: 2
-    m_Value: 678.3062
+    m_Value: 454.8955
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.15613043, y: 0.80780274, z: -0.24617858, w: -0.51232153}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -676,22 +676,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\Projects\Neon-Arena\Neon Arena
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 90540000
-    m_LastClickedID: 21648
-    m_ExpandedIDs: 00000000325400003454000036540000385400003a5400003c5400003e54000000ca9a3b
+    m_SelectedIDs: 885a0000
+    m_LastClickedID: 23176
+    m_ExpandedIDs: 00000000545a0000565a0000585a00005a5a00005c5a00005e5a0000605a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -719,7 +719,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000325400003454000036540000385400003a5400003c5400003e540000
+    m_ExpandedIDs: 00000000545a0000565a0000585a00005a5a00005c5a00005e5a0000605a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -11,19 +11,23 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 playerVelocity;
     private bool isGrounded;
 
-    public float speed = 5f;
-    public float gravity = -9.8f;
-    public float jumpHeight = 3f;
+    private float speed = 5f;
+    private float gravity = -20f;
+    private float jumpHeight = .75f;
     public bool isSprinting = false;
     private Image walkImage;
     private Image sprintImage;
     public GameObject walkIcon;
     public GameObject sprintIcon;
 
+    public static float walkSpeed = 5f;
+    public static float runSpeed = 10f;
+    public static float newJumpHeight = .75f;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        
+
 
         walkImage = walkIcon.GetComponent<Image>();
         sprintImage = sprintIcon.GetComponent<Image>();
@@ -36,11 +40,11 @@ public class PlayerMotor : MonoBehaviour
 
         if (isSprinting)
         {
-            speed = 10f;
+            speed = runSpeed;
         }
         else if(isGrounded)
         {
-            speed = 5f;
+            speed = walkSpeed;
         }
     }
 

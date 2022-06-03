@@ -60,17 +60,25 @@ public class StartMenu : MonoBehaviour
     {
         if(totalDollars >= 500)
         {
-            isMap2Locked = false;
-            totalDollars = totalDollars - 500;
+            if(isMap2Locked == true)
+            {
+                isMap2Locked = false;
+                totalDollars = totalDollars - 500;
+            }
+
         }
     }
     public void BuyMap3()
     {
         if(totalDollars >= 500)
         {
-            isMap3Locked = false;
-            totalDollars = totalDollars - 500;
+            if(isMap3Locked == true)
+            {
+                isMap3Locked = false;
+                totalDollars = totalDollars - 500;
+            }
         }
+
     }
 
     // Settings Sliders

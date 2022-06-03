@@ -19,6 +19,10 @@ public class Gun : MonoBehaviour
 
     public Image shieldBar;
 
+    private bool boughtOneShot = false;
+    private bool boughtIncreaseSpeed = false;
+    private bool boughtIncreaseJumpHeight = false;
+
     // Update is called once per frame
     private void Update()
     {
@@ -54,15 +58,15 @@ public class Gun : MonoBehaviour
         }
     }
 
-    private bool alreadybought = false;
+
 
     public void OneShotKill()
     {
         if(dollars >= 200f)
         {
-            if (!alreadybought)
+            if (!boughtOneShot)
             {
-                alreadybought = true;
+                boughtOneShot = true;
                 dollars = dollars - 200f;
                 StartMenu.totalDollars = StartMenu.totalDollars - 200f;
                 dollarText.text = "" + (dollars);
@@ -82,6 +86,37 @@ public class Gun : MonoBehaviour
                 dollarText.text = "" + (dollars);
                 PlayerShield = 100f;
                 shieldBar.fillAmount = PlayerShield/100f;
+            }
+        }
+    }
+
+    public void IncreaseSpeed()
+    {
+        if(dollars >= 100f)
+        {
+            if (!boughtIncreaseSpeed)
+            {
+                boughtIncreaseSpeed = true;
+                dollars = dollars - 100f;
+                StartMenu.totalDollars = StartMenu.totalDollars - 100f;
+                dollarText.text = "" + (dollars);
+                PlayerMotor.walkSpeed = 8f;
+                PlayerMotor.runSpeed = 15f;
+            }
+        }
+    }
+
+    public void IncreaseJumpHeight()
+    {
+        if(dollars >= 100f)
+        {
+            if (!boughtIncreaseJumpHeight)
+            {
+                boughtIncreaseJumpHeight = true;
+                dollars = dollars - 100f;
+                StartMenu.totalDollars = StartMenu.totalDollars - 100f;
+                dollarText.text = "" + (dollars);
+                PlayerMotor.newJumpHeight = 1.5f;
             }
         }
     }
