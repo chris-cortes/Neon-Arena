@@ -22,6 +22,10 @@ public class StartMenu : MonoBehaviour
 
     public AudioSource music;
 
+    public Material map;
+    public Material gun;
+    public Material particles;
+
     void Update()
     {
         music.volume = musicVolume;
@@ -79,6 +83,129 @@ public class StartMenu : MonoBehaviour
             }
         }
 
+    }
+
+    // Map Color Customization
+    public void BlackMapColor()
+    {
+        map.color = Color.black;
+    }
+    public void BlueMapColor()
+    {
+        map.color = Color.blue;
+    }
+    public void CyanMapColor()
+    {
+        map.color = Color.cyan;
+    }
+    public void GreenMapColor()
+    {
+        map.color = Color.green;
+    }
+    public void GreyMapColor()
+    {
+        map.color = Color.grey;
+    }
+    public void MagentaMapColor()
+    {
+        map.color = Color.magenta;
+    }
+    public void RedMapColor()
+    {
+        map.color = Color.red;
+    }
+    public void WhiteMapColor()
+    {
+        map.color = Color.white;
+    }
+    public void YellowMapColor()
+    {
+        map.color = Color.yellow;
+    }
+
+    // Gun Glow Color Customization
+    public void BlackGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.black);
+        particles.SetColor("_EmissionColor", Color.black);
+    }
+    public void BlueGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.blue);
+        particles.SetColor("_EmissionColor", Color.blue);
+    }
+    public void CyanGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.cyan);
+        particles.SetColor("_EmissionColor", Color.cyan);
+    }
+    public void GreenGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.green);
+        particles.SetColor("_EmissionColor", Color.green);
+    }
+    public void GreyGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.grey);
+        particles.SetColor("_EmissionColor", Color.grey);
+    }
+    public void MagentaGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.magenta);
+        particles.SetColor("_EmissionColor", Color.magenta);
+    }
+    public void RedGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.red);
+        particles.SetColor("_EmissionColor", Color.red);
+    }
+    public void WhiteGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.white);
+        particles.SetColor("_EmissionColor", Color.white);
+    }
+    public void YellowGunGlowColor()
+    {
+        gun.SetColor("_EmissionColor", Color.yellow);
+        particles.SetColor("_EmissionColor", Color.yellow);
+    }
+
+    // Gun Color
+    public void BlackGunColor()
+    {
+        gun.color = Color.black;
+    }
+    public void BlueGunColor()
+    {
+        gun.color = Color.blue;
+    }
+    public void CyanGunColor()
+    {
+        gun.color = Color.cyan;
+    }
+    public void GreenGunColor()
+    {
+        gun.color = Color.green;
+    }
+    public void GreyGunColor()
+    {
+        gun.color = Color.grey;
+    }
+    public void MagentaGunColor()
+    {
+        gun.color = Color.magenta;
+    }
+    public void RedGunColor()
+    {
+        gun.color = Color.red;
+    }
+    public void WhiteGunColor()
+    {
+        gun.color = Color.white;
+    }
+    public void YellowGunColor()
+    {
+        gun.color = Color.yellow;
     }
 
     // Settings Sliders
