@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1108.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2048
     height: 1109
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1059
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 12003, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 12002, y: 14042}
   vertical: 1
-  controlID: 123
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 0
     width: 2048
     height: 788
-  m_MinSize: {x: 678, y: 221}
-  m_MaxSize: {x: 12003, y: 4021}
+  m_MinSize: {x: 677, y: 221}
+  m_MaxSize: {x: 12002, y: 4021}
   vertical: 0
-  controlID: 124
+  controlID: 19
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 296
     height: 788
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 42640000
       m_LastClickedID: 0
-      m_ExpandedIDs: e0d1fffff8f9ffff40700000
+      m_ExpandedIDs: 56b4ffffdcb7ffffa0cbffff2edeffff40f7fffff2f9ffffb88b0000648e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -433,14 +433,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 581.981, y: 331.37457, z: -58.872044}
+    m_Target: {x: 35.94941, y: -22.940819, z: 66.18912}
     speed: 2
-    m_Value: {x: 581.981, y: 331.37457, z: -58.872044}
+    m_Value: {x: 35.94941, y: -22.940819, z: 66.18912}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -469,17 +469,17 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -487,17 +487,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.2166195, y: -0.39032692, z: 0.09502716, w: -0.8897703}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.21781021, y: -0.39151758, z: 0.09593935, w: -0.8888579}
   m_Size:
-    m_Target: 429.17352
+    m_Target: 61.558006
     speed: 2
-    m_Value: 429.17352
+    m_Value: 61.558006
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1.0005
     m_SpeedNormalized: 0.49999997
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.085088775, y: 0.8430369, z: -0.51228744, w: 0.14047945}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -676,22 +676,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FPS/Art/Materials
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/FPS/Art/Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\Projects\Neon-Arena\Neon Arena
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d66a0000
-    m_LastClickedID: 27350
-    m_ExpandedIDs: 00000000445f0000465f0000485f00004a5f00004c5f00004e5f0000505f0000665f00006c5f000000ca9a3b
+    scrollPos: {x: 0, y: 474}
+    m_SelectedIDs: 86590000
+    m_LastClickedID: 22918
+    m_ExpandedIDs: 000000001e59000020590000225900002459000026590000285900002a5900002c5900004259000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -719,7 +719,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000445f0000465f0000485f00004a5f00004c5f00004e5f0000505f0000
+    m_ExpandedIDs: 000000001e59000020590000225900002459000026590000285900002a5900002c590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
