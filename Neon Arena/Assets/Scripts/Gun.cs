@@ -29,6 +29,7 @@ public class Gun : MonoBehaviour
         if(Input.GetButtonDown("Fire"))
         {
             Shoot();
+            shootingSound.volume = 0.25f;
             shootingSound.Play();
         }
     }

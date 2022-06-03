@@ -1575,6 +1575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
@@ -2070,6 +2075,7 @@ RectTransform:
   - {fileID: 615460271}
   - {fileID: 108501899}
   - {fileID: 1751173255}
+  - {fileID: 734929869}
   - {fileID: 2052796697}
   m_Father: {fileID: 1888317872}
   m_RootOrder: 0
@@ -3641,16 +3647,16 @@ RectTransform:
   m_GameObject: {fileID: 734929868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3833333, y: 1.3833333, z: 1.3833333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2086055982}
   - {fileID: 1622810459}
-  m_Father: {fileID: 1888317872}
-  m_RootOrder: 4
+  m_Father: {fileID: 483812740}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -273}
+  m_AnchoredPosition: {x: 22, y: 0}
   m_SizeDelta: {x: 219, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &748064158
@@ -9877,7 +9883,6 @@ RectTransform:
   - {fileID: 1037852787}
   - {fileID: 1651708714}
   - {fileID: 257588174}
-  - {fileID: 734929869}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10963,7 +10968,7 @@ RectTransform:
   - {fileID: 2031962319}
   - {fileID: 19505743}
   m_Father: {fileID: 483812740}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
