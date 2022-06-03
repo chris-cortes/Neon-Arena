@@ -20,7 +20,7 @@ public class StartMenu : MonoBehaviour
     public static bool isMapColorGrey = false;
     public static bool isMapColorMagenta = false;
     public static bool isMapColorRed = false;
-    public static bool isMapColorWhite = false;
+    public static bool isMapColorWhite = true;
     public static bool isMapColorYellow = false;
 
     public static bool isGunGlowColorBlack = false;
@@ -30,10 +30,10 @@ public class StartMenu : MonoBehaviour
     public static bool isGunGlowColorGrey = false;
     public static bool isGunGlowColorMagenta = false;
     public static bool isGunGlowColorRed = false;
-    public static bool isGunGlowColorWhite = false;
+    public static bool isGunGlowColorWhite = true;
     public static bool isGunGlowColorYellow = false;
 
-    public static bool isGunColorBlack = false;
+    public static bool isGunColorBlack = true;
     public static bool isGunColorBlue = false;
     public static bool isGunColorCyan = false;
     public static bool isGunColorGreen = false;
