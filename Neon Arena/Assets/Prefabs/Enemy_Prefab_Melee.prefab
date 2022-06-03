@@ -1626,7 +1626,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 4096
-  deathEffect: {fileID: 8950624839484268202, guid: 4765c2372f3134248b8c49e6539a13c3,
+  deathEffect: {fileID: 8950624839484268202, guid: 45ce85b82008be84287f2c7e5bf07647,
     type: 3}
   health: 100
   enemydamagetoplayer: 40
