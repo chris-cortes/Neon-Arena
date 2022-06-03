@@ -1119,7 +1119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1572,6 +1572,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1163743909475682726, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
+      propertyPath: CoolingCellsSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7178227741419690008, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1644,19 +1649,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7210791800496089520, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
+      propertyPath: ShootSfx
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210791800496089520, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210791800496089520, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
+      propertyPath: ChangeWeaponSfx
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
       propertyPath: m_Volume
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+    - target: {fileID: 7483409155303164825, guid: ab2bd783908b17a4a83ccb90b431357c,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7984829751321246979, guid: ab2bd783908b17a4a83ccb90b431357c,
         type: 3}
       propertyPath: m_Enabled
@@ -2633,7 +2653,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3163,7 +3183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4472,7 +4492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6876,7 +6896,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7493,7 +7513,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8285,7 +8305,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
+  - {fileID: 2100000, guid: 93ea9d03354b01340b84d44b45e64203, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8866,6 +8886,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8950624839484268202, guid: 4765c2372f3134248b8c49e6539a13c3,
         type: 3}
+    - target: {fileID: 6114530963704821741, guid: 254375c020d9e7940899c93c146567c1,
+        type: 3}
+      propertyPath: enemydamagetoplayer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6115702486635082706, guid: 254375c020d9e7940899c93c146567c1,
         type: 3}
       propertyPath: m_Name

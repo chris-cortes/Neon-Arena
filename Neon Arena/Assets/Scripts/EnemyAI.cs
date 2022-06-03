@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     
 
     public float health = 100f;
-    public float enemydamagetoplayer = 40f;
+    public float enemydamagetoplayer = 20f;
 
     public static bool OneShotBaught = false;
 
