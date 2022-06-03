@@ -66,11 +66,11 @@ public class StartMenu : MonoBehaviour
     }
     public void BuyMap3()
     {
-      if(totalDollars >= 500)
-      {
-          isMap3Locked = false;
-          totalDollars = totalDollars - 500;
-      }
+        if(totalDollars >= 500)
+        {
+            isMap3Locked = false;
+            totalDollars = totalDollars - 500;
+        }
     }
 
     // Settings Sliders

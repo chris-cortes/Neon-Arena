@@ -37,7 +37,7 @@ public class Scene3_Score : MonoBehaviour
             {
                 //Debug.Log(s1Score);
                 timer += Time.deltaTime;
-                seconds = (int)timer % 60;
+                seconds = (int)timer;
                 timerTextValue.text = "" + (seconds);
 
                 if (seconds > s3Score)

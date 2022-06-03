@@ -32,11 +32,11 @@ public class Scene1_Score : MonoBehaviour
         if(sceneName == "Map1")
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            
+
             if ((player.GetComponent<GameOver>().PlayerHealth) > 0f){
                 //Debug.Log(s1Score);
                 timer += Time.deltaTime;
-                seconds = (int)timer % 60;
+                seconds = (int)timer;
                 timerTextValue.text = "" + (seconds);
 
                 if (seconds > s1Score)
@@ -44,9 +44,9 @@ public class Scene1_Score : MonoBehaviour
                     s1Score = seconds;
                 }
             }
-            
+
         }
-        
+
 
         if (sceneName == "StartMenu")
         {
