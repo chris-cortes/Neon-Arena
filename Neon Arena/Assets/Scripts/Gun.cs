@@ -45,6 +45,7 @@ public class Gun : MonoBehaviour
                 {
                     dollars += 50.00f;
                     dollarText.text = "" + (dollars);
+                    StartMenu.totalDollars += 50.00f;
                 }
             }
 
@@ -63,6 +64,7 @@ public class Gun : MonoBehaviour
             {
                 alreadybought = true;
                 dollars = dollars - 200f;
+                StartMenu.totalDollars = StartMenu.totalDollars - 200f;
                 dollarText.text = "" + (dollars);
                 damage = 1000f;
             }
@@ -76,6 +78,7 @@ public class Gun : MonoBehaviour
             if (PlayerShield != 100f)
             {
                 dollars = dollars - 100f;
+                StartMenu.totalDollars = StartMenu.totalDollars - 100f;
                 dollarText.text = "" + (dollars);
                 PlayerShield = 100f;
                 shieldBar.fillAmount = PlayerShield/100f;
