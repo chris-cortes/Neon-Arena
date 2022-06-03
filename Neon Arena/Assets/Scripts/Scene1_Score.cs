@@ -15,6 +15,7 @@ public class Scene1_Score : MonoBehaviour
     private int seconds;
     static int s1Score = 0;
     string sceneName;
+    private GameObject player;
 
     void Start()
     {
@@ -22,13 +23,6 @@ public class Scene1_Score : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         sceneName = currentScene.name;
-
-        /*
-        if (sceneName == "StartMenu")
-        {
-            menuScore.text = "" + 0.000000;
-        }
-        */
     }
 
     // Update is called once per frame
@@ -37,15 +31,20 @@ public class Scene1_Score : MonoBehaviour
 
         if(sceneName == "Map1")
         {
-            //Debug.Log(s1Score);
-            timer += Time.deltaTime;
-            seconds = (int)timer % 60;
-            timerTextValue.text = "" + (seconds);
+            player = GameObject.FindGameObjectWithTag("Player");
+            
+            if ((player.GetComponent<GameOver>().PlayerHealth) > 0f){
+                //Debug.Log(s1Score);
+                timer += Time.deltaTime;
+                seconds = (int)timer % 60;
+                timerTextValue.text = "" + (seconds);
 
-            if (seconds > s1Score)
-            {
-                s1Score = seconds;
+                if (seconds > s1Score)
+                {
+                    s1Score = seconds;
+                }
             }
+            
         }
         
 
