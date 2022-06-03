@@ -55,6 +55,7 @@ public class StartMenu : MonoBehaviour
     public Material map;
     public Material gun;
     public Material particles;
+    public Material explosion;
 
     void Update()
     {
@@ -256,6 +257,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorBlack = true;
                 gun.SetColor("_EmissionColor", Color.black);
                 particles.SetColor("_EmissionColor", Color.black);
+                explosion.SetColor("_EmissionColor", Color.black);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -272,6 +274,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorBlue = true;
                 gun.SetColor("_EmissionColor", Color.blue);
                 particles.SetColor("_EmissionColor", Color.blue);
+                explosion.SetColor("_EmissionColor", Color.blue);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -287,6 +290,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorCyan = true;
                 gun.SetColor("_EmissionColor", Color.cyan);
                 particles.SetColor("_EmissionColor", Color.cyan);
+                explosion.SetColor("_EmissionColor", Color.cyan);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -302,6 +306,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorGreen = true;
                 gun.SetColor("_EmissionColor", Color.green);
                 particles.SetColor("_EmissionColor", Color.green);
+                explosion.SetColor("_EmissionColor", Color.green);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -317,6 +322,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorGrey = true;
                 gun.SetColor("_EmissionColor", Color.grey);
                 particles.SetColor("_EmissionColor", Color.grey);
+                explosion.SetColor("_EmissionColor", Color.grey);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -332,6 +338,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorMagenta = true;
                 gun.SetColor("_EmissionColor", Color.magenta);
                 particles.SetColor("_EmissionColor", Color.magenta);
+                explosion.SetColor("_EmissionColor", Color.magenta);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -347,6 +354,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorRed = true;
                 gun.SetColor("_EmissionColor", Color.red);
                 particles.SetColor("_EmissionColor", Color.red);
+                explosion.SetColor("_EmissionColor", Color.red);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -362,6 +370,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorWhite = true;
                 gun.SetColor("_EmissionColor", Color.white);
                 particles.SetColor("_EmissionColor", Color.white);
+                explosion.SetColor("_EmissionColor", Color.white);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }
@@ -377,6 +386,7 @@ public class StartMenu : MonoBehaviour
                 isGunGlowColorYellow = true;
                 gun.SetColor("_EmissionColor", Color.yellow);
                 particles.SetColor("_EmissionColor", Color.yellow);
+                explosion.SetColor("_EmissionColor", Color.yellow);
                 totalDollars = totalDollars - 100;
                 totalDollarsText.text = "" + (totalDollars);
             }

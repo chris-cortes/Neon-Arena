@@ -556,6 +556,7 @@ MonoBehaviour:
   map: {fileID: 2100000, guid: 855509ca18369ec40ac8ca60ee649bed, type: 2}
   gun: {fileID: 2100000, guid: 0c55f53a7bb3c354ababeb18b89c2fce, type: 2}
   particles: {fileID: 2100000, guid: a7baa8fdcb831b44d87d70b1e6941b39, type: 2}
+  explosion: {fileID: 2100000, guid: a74eef6270cec6b4c9dfed0e7aa93cf6, type: 2}
 --- !u!1 &48476688
 GameObject:
   m_ObjectHideFlags: 0
