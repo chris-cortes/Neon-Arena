@@ -41,7 +41,6 @@ namespace Unity.FPS.Game
 
         public static AudioMixerGroup GetAudioGroup(AudioGroups group)
         {
-            /*
             if (s_AudioManager == null)
                 s_AudioManager = GameObject.FindObjectOfType<AudioManager>();
 
@@ -51,7 +50,6 @@ namespace Unity.FPS.Game
                 return groups[0];
 
             Debug.LogWarning("Didn't find audio group for " + group.ToString());
-            */
             return null;
         }
 
